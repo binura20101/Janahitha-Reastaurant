@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222222; /* Changed from #ffffff to dark gray */
+    margin: 0;
+    padding: 20px;
+}
+
+header img {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+#demo {
+    width: 100vw;
+    max-width: 100%;
+    height: 500px;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#demo .carousel-inner,
+#demo .carousel-item,
+#demo .carousel-item img {
+    width: 100vw;
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#demo .carousel-control-prev,
+#demo .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute; /* Add this line */
+    z-index: 2;         /* Ensure controls are above images */
+}
+
+#demo .carousel-control-prev {
+    left: 0;
+}
+
+#demo .carousel-control-next {
+    right: 0;
+}
+#ul_image {
+    width: 200px;
+    height: auto;
+}
+.float-img {
+    float: right;
+    width: 300px;
+    height: 300px;
+    margin-left: 5px;   /* 5px space between image and list */
+    margin-bottom: 10px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.gallery-item img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: 20px;
+    float: inline-start;
+}
+footer {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.card-img-top {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
